@@ -1,0 +1,9 @@
+language: csharp
+solution: Heroko.sln
+deploy:
+  provider: heroku
+  api_key:
+    secure: bkeyT+fvJsnPQB+G5PHhYNpflVP0k5WhswXazJvD7C00g2DOZefM9r0TswQjkX8st+QHDSjcrjkFmsFXHbWA01gbdcn4s8LhXyL+zIMKgicD+48Vvjzp5MnGHINssvU6NWP3AzzfWP01d+NRhctkRm80KRHA4GyCA1dJ7JSriXGvk4BynjKPM7yTjZmGoHFEDZgF+aivQwEApp9YOnPVCXei6zgFjIWPpZidYFxaVp0N32n54hGcGdY8DjW25d86onOAoVHZgo9cHaBpqes4p2C/zeJia2KAeYyQ2G/F+/yfpf2xEuphxl4FO6Sae9AzEUFm2deXKSK4yfKGxXtUTv5RzXc3N5gt/Ui30S/UxoJJ+yHNMp5X9eRqjKZehhbtfliqywf0reWBi2nzTCPBNucdLkzSVDCJ+vaw3Kb3kUz6MBvHkv/Z6LyLHWPi31DqyEsvnja8J6d85SxktwjhVCaSoJNwIEg9EBOC5G63EjUrrMePUrSYfk4tmjQ6p+nmaI1ShENXDeLldhsaLCqdBWNz/LCyotB9zqXoXV8qez+1nIhUtzo5lcfDIDMuqzO+qkLxYalWOWbPc6G935xxUcgrQg2K0oGnnZ8RC/aXWQxIkmo6NJD2zJnZ9DA752S3rjNJo4YOyxuxSbhidRK2XNqNBTw2pfRtmb02MPj4VEE=
+  app: Heroku
+  on:
+    repo: easfilho/Heroku
