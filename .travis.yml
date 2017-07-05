@@ -1,6 +1,6 @@
 language: csharp
 mono:
-  - none
+  - latest
 solution: Heroko.sln
 
 deploy:
