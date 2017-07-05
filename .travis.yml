@@ -2,8 +2,7 @@ language: csharp
 mono:
   - none
 solution: Heroko.sln
-install:
-  - nuget restore Heroko.sln
+
 deploy:
   provider: heroku
   api_key:
