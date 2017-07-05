@@ -3,7 +3,7 @@ mono:
   - latest
 solution: Heroko.sln
 install:
-  - nuget restore Heroko.sln
+  - nuget restore Heroko/Heroko.sln
 deploy:
   provider: heroku
   api_key:
