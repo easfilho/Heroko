@@ -1,5 +1,8 @@
 language: csharp
 solution: Heroko.sln
+install:
+  - sudo apt-get install -y gtk-sharp2
+  - nuget restore Heroko.sln
 deploy:
   provider: heroku
   api_key:
