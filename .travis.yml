@@ -9,3 +9,7 @@ deploy:
   app: Heroku
   on:
     repo: easfilho/Heroku
+notifications:
+  email:
+    recipients:
+        - allanmleite@hotmail.com
