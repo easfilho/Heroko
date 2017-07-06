@@ -1,23 +1,4 @@
 language: csharp
-mono:
-  - latest
-solution: Heroko.sln
-install:
-  - nuget restore solution-name.sln
-  - nuget install NUnit.Runners -Version 2.6.4 -OutputDirectory testrunner
-script:
-  - xbuild /p:Configuration=Release Heroko.sln
-  - mono ./testrunner/NUnit.Runners.2.6.4/tools/nunit-console.exe ./MyProject.Tests/bin/Release/MyProject.Tests.dll
-deploy:
-  provider: heroku
-  api_key:
-    secure: f3a68f64-4b62-401c-a6a6-07fdab72870e
-  app: Heroku
-  on:
-    repo: easfilho/Heroku
-	
-	
-language: csharp
 solution: "Heroko.sln"
 install:
 - travis_retry nuget restore -source "https://www.nuget.org/api/v2" Heroko.sln
