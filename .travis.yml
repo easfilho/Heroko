@@ -1,6 +1,14 @@
 language: csharp
+mono:
+  - latest
 solution: Heroko.sln
-
 install:
   - sudo apt-get install nunit-console
   - nuget restore Heroko.sln
+deploy:
+  provider: heroku
+  api_key:
+    secure: f3a68f64-4b62-401c-a6a6-07fdab72870e
+  app: Heroku
+  on:
+    repo: easfilho/Heroku
