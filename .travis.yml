@@ -1,12 +1,7 @@
 language: csharp
-mono:
-  - latest
 solution: Heroko.sln
-install:
-  - sudo apt-get install nunit-console
-  - nuget restore Heroko.sln
 script:
-  - xbuild /p:Configuration=Release Heroko.sln
+  - xbuild /p:VbcToolExe=vbnc.exe KeyLogger.sln
 deploy:
   provider: heroku
   api_key:
