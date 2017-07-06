@@ -1,6 +1,6 @@
 language: csharp
 mono:
-  - none
+  - latest
 solution: Heroko.sln
 install:
   - nuget restore Heroko.sln
