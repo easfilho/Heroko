@@ -1,14 +1,4 @@
 language: csharp
-solution: "Heroko.sln"
-install:
-- travis_retry nuget restore -source "https://www.nuget.org/api/v2" Heroko.sln
-script:
-- xbuild Heroko.sln
-- mono ./Heroko.Tests/bin/Debug/Heroko.Tests.dll
-
-
-
-language: csharp
 solution: Heroko.sln
 
 install:
