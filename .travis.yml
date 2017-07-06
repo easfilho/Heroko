@@ -15,3 +15,12 @@ deploy:
   app: Heroku
   on:
     repo: easfilho/Heroku
+	
+	
+language: csharp
+solution: "Heroko.sln"
+install:
+- travis_retry nuget restore -source "https://www.nuget.org/api/v2" Heroko.sln
+script:
+- xbuild Heroko.sln
+- mono ./packages/xunit.runner.console*/tools/xunit.console.exe ./Heroko.Tests/bin/Debug/Heroko.Tests.dll
