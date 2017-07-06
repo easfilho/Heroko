@@ -3,7 +3,7 @@ solution: Heroko.sln
 
 install:
   - sudo apt-get install nunit-console
-  - nuget restore Herolo.sln
+  - nuget restore Heroko.sln
 
 script:
   - xbuild Heroko
