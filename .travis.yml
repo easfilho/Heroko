@@ -4,7 +4,3 @@ solution: Heroko.sln
 install:
   - sudo apt-get install nunit-console
   - nuget restore Heroko.sln
-
-script:
-  - xbuild Heroko
-  - nunit-console ./Heroko.Tests/bin/Debug/Heroko.Tests.dll
