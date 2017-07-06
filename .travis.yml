@@ -1,7 +1,7 @@
 language: csharp
 solution: Heroko.sln
 script:
-  - xbuild /p:VbcToolExe=vbnc.exe KeyLogger.sln
+  - xbuild /p:VbcToolExe=vbnc.exe Heroko.sln
 deploy:
   provider: heroku
   api_key:
