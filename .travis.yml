@@ -5,3 +5,16 @@ install:
 script:
 - xbuild Heroko.sln
 - mono ./Heroko.Tests/bin/Debug/Heroko.Tests.dll
+
+
+
+language: csharp
+solution: Heroko.sln
+
+install:
+  - sudo apt-get install nunit-console
+  - nuget restore Herolo.sln
+
+script:
+  - xbuild Heroko
+  - nunit-console ./Heroko.Tests/bin/Debug/Heroko.Tests.dll
